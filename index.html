@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is an example resume.">
+    <meta name="keywords" content="resume, jobs, career">
+    <title>Ameer Nazzal's Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+    /* Colors */
+    --color-primary: #023047;  /* Dark Blue for main text */
+    --color-secondary: #255f85;  /* Dark Sky Blue for sidebar */
+    --color-accent: #8ac926;  /* Lime Green for links hover and section separators */
+    --hover-color: #88b7d8;
+
+
+
+    /* Spacing */
+    --base-spacing: 1.5rem;
+    /* Main spacing for elements */
+    --section-spacing: 2.5rem;
+    /* Space between sections */
+    --sidebar-spacing: 1.5rem;
+    /* Padding around sidebar content */
+
+    /* Fonts */
+    --font-primary: 'Work Sans', sans-serif;
+    /* Main font */
+    --font-secondary: 'Nunito', sans-serif;
+    /* Secondary font (not used in this CSS) */
+    --base-font-size: 1rem;
+    /* Base font size for body text */
+    --h1-font-size: 2rem;
+    /* Font size for main headings */
+    --h2-font-size: 1.75rem;
+    /* Font size for sub-headings */
+    --h3-font-size: 1.5rem;
+    /* Font size for sub-sub-headings */
+    --h4-font-size: 1.25rem;
+    /* Font size for the smallest headings */
+
+    /* Other */
+    --base-line-height: 1.5;
+    /* Base line height for text */
+    --section-separator: 1px solid var(--color-accent);
+    /* Line to separate sections */
+    --icon-font-size: 2rem;
+    /* Size of the font icons */
+    --transition-speed: 0.3s;
+    /* Transition speed for link hover effects */
+
+    /* Link hover color */
+}
+
+        body {
+            font-family: 'Times New Roman', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('tom-briskey-HM3WZ4B1gvM-unsplash.jpg');
+            background-size: cover;
+            color: black;
+            font-size: 16px; 
+            line-height: 1.618; 
+            color: var(--black);
+            font-size: var(--base-font-size);
+            line-height: var(--base-line-height);
+        }
+        
+
+       
+        h1 {
+            font-size: 2.618em; 
+            text-align: center;
+        }
+        h2 {
+            font-size: 1.618em; 
+            text-align: center;
+        }
+        h3 {
+            font-size: 1em;
+        }
+
+       
+        .container {
+            width: 70.8%; 
+            max-width: 1600px;
+            margin: 0 auto;
+            background-color: bisque;
+            padding: 1.618% 2.618%; 
+            box-shadow:  10px rgba(0, 0, 0, 0.3);
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .sidebar .portrait img {
+            border-radius: 50%;
+            /* Make the image circular */
+            object-fit: cover;
+            /* Scale the image to cover its content box, could distort the image */
+            width: 100%;
+            /* Full width of the parent */
+            height: auto;
+            /* Keep aspect ratio */
+            size-adjust: var(---font-size);
+        }
+
+        .links a {
+            color: inherit;
+            font-size: var(--icon-font-size);
+            text-decoration: none;
+            transition: color var(--transition-speed) ease, transform var(--transition-speed) ease;   
+        }
+
+        
+        header, main, footer {
+            padding: 0.314% 2.618%; 
+        }
+        
+        p {
+        font-family: var(--times-new-roman);
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+        p, li {
+            color: black;
+            text-align: justify all;
+        }
+        p, a {
+            text-align: center;
+        }
+
+
+        
+        a {
+            color: black;
+            text-decoration: none;
+            padding: 0.618em 1em; 
+    
+        }
+
+        
+        a:hover {
+            color: darkolivegreen;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li:before {
+            content: "\25B9\0020";
+            list-style-type: none;
+            color: #5C5651;
+        }
+
+    
+        main section:not(:last-of-type) {
+            border-bottom: 10px ridge #ccc;
+        }
+
+        
+        .links {
+            display: flex;
+            justify-content: space-evenly;
+            width: 38.2%; 
+            margin: 0 auto;
+        }
+
+        @media print {
+            body {
+                background-image: none;
+                color: black;
+            }
+          
+            a {
+                color: black;
+                text-decoration: underline;
+            }
+            a[href^="mailto:"]:after {
+                content: " (" attr(href) ")";
+            }
+            a[href^="tel:"]:after {
+                content: " (" attr(href) ")";
+            }
+          
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <header>
+        <aside class="sidebar" role="complementary"> <!-- The aside tag is used for content that is related but separate from the main content, often as a sidebar -->
+
+            <div class="sidebar-top"> <!-- A div to contain all elements on the top of the sidebar -->
+        <div class="portrait">
+        <img src="IMG_E8241.webp">
+        </div>
+        <h1>Ameer Nazzal</h1>
+        <h2>My Journey to a Successful Technology Career</h2>
+    </header>
+    <p><a href="mailto:nazzalameer@yahoo.com">nazzalameer@yahoo.com</a></p>
+    <p><a href="tel:+3475000005">347-500-0005</a></p>
+    <p>8619 Grand Ave North Bergen, NJ</p>
+    <div class="links"> <!-- A div to hold all social media and contact links -->
+        <a href="https://www.instagram.com/ameerhnazzal/"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/nazzal_ameerQA"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/ahn8"><i class="fab fa-github"></i></a>
+    </div>
+    <main>
+        <section>
+            <h2>Goals</h2>
+            <p>My goals are to find expertise in different coding languages as I progress in my career. I look forward to progressing in the Information Systems field with my expertise in business field. I looked forward to taking on any challange that is required in order to drive me to my goals.</p>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <ul><li><i class="fab fa-html5 fa-skill-icon"></i> HTML5</li> <!-- Each skill -->
+                <li><i class="fab fa-css3-alt fa-skill-icon"></i> CSS</li>
+                <li><i class="fab fa-js-square fa-skill-icon"></i> JavaScript</li>
+                <li><i class="fab fa-python fa-skill-icon"></i> Python</li>
+                <li><i class="fab fa-github fa-skill-icon"></i> Github</li>
+                <li><i class="fab fa-server fa-skill-icon"></i> Quality Customer Service</li>
+                <li><i class="fab font-awesome fa-skill-icon"></i> Prioritizing</li>
+                <li><i class="fab font-awesome fa-skill-icon"></i> Upselling</li>
+                <li><i class="fab font-awesome fa-skill-icon"></i> Executing Business Processes</li>
+                <li><i class="fab font-awesome fa-skill-icon"></i> Team Leadership</li>
+                <li><i class="fab font-awesome fa-skill-icon"></i> Work Ethics</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <article>
+                <h3>Undergraduate B.S. in Business and Information Systems</h3>
+                <m>New Jersey Institute of Technology, 2022-Present</m>
+            </article>
+            <article>
+                <h3>High School Diploma</h3>
+                <m>North Bergen High School, 2018-2022</m>
+            </article>
+        </section>
+
+        <section>
+            <h2>Experience</h2>
+            <article>
+                <h3>Store Manager and Crew Member</h3>
+                <m>Popeyes Lousiana Kitchen, 2019-2021</m>
+            </article>
+            <article>
+                <h3>General Manager and Business Owner</h3>
+                <m>Twinz Hot Chicken, 2021-Present</m>
+            </article>
+            <article>
+                <h3>Executive Assistant</h3>
+                <m>Fairview Management, 2020-Present</m>
+            </article>
+            <article>
+                <h3>Store Manager</h3>
+                <m>Cosas Lindas Quality Discount Furniture, 2017-2022</m>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Ameer Nazzal © 2023</p>
+    </footer>
+</div>
+</body>
+</html>
